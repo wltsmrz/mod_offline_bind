@@ -51,6 +51,6 @@ module:hook("message/offline/broadcast", function(event)
 	return true;
 end);
 
-module:hook("authentication-success", function(event)
+module:hook("resource-bind", function(event)
   module:fire_event("message/offline/broadcast", { origin = event.session });
 end, 999);
