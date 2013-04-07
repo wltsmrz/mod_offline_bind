@@ -53,4 +53,4 @@ end);
 
 module:hook("resource-bind", function(event)
   module:fire_event("message/offline/broadcast", { origin = event.session });
-end, 999);
+end, 0);
